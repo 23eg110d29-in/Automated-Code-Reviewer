@@ -84,4 +84,8 @@ const boot = async () => {
   }
 };
 
-boot();
+if (require.main === module) {
+  boot();
+}
+
+module.exports = app;
